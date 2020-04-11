@@ -19,8 +19,7 @@ void eraseFromIndexUptoLength(string &inputString, int index, int length)
 
 void eraseSingleCharacterAtGivenIndexUsingIterator(string &inputString, string::iterator itr, int index)
 {
-    advance(itr, index); //iterator at pointing at index
-    //or itr=itr+index
+    advance(itr, index);    //iterator at pointing at index
     inputString.erase(itr); //remove single character pointed by the iterator;
 }
 
@@ -30,7 +29,7 @@ void eraseFromOneIndexToAnotherIndex(string &inputString, int startingIndex, int
     string::iterator start = next(inputString.begin(), startingIndex);
     string::iterator end = next(inputString.begin(), endIndex);
 
-    inputString.erase(start, end);
+    inputString.erase(start, end); //remove from startingindex to endIndex;
 }
 int main()
 {
